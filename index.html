@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Media Queries Portfolio</title>
+    <style>
+        body {
+        font-family: "Mooli", sans-serif;
+        background-color: beige;
+        margin: 50px 50px 0px 50px;
+        display: flex;
+        flex-direction: column;
+        min-height: 95vh;
+        }
+
+        @media (max-width: 640px) {
+           body {
+            background-color: #F9F3CC;
+           }
+        }
+
+        @media (min-width: 640px) and (max-width: 1280) {
+           body {
+            background-color: slateblue;
+           }
+        }
+
+        @media (min-width: 1281px) and (max-width: 1440) {
+           body {
+            background-color: #20e2d7;
+           }
+        }
+
+        @media (min-width: 1441px) {
+           body {
+            background-color: paleturquoise;
+           }
+        }
+
+        .main {
+            flex: 1;
+        }
+
+        @media (max-width: 680px) {
+        }.logo {
+            display: inline-block;
+            width: 20%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-style: italic;
+            font-family: fantasy;
+        }
+
+        footer {
+            text-align: right;
+            color: midnightblue;
+        }
+
+        .card {
+            width: 45%;
+        }
+
+        .title-pic {
+           height: 200px;
+           float: left;
+           margin-right: 50px;
+        }
+
+        .card {
+           width: 100%;
+           display: block;
+           margin-bottom: 30px;
+           text-align: justify;
+        }
+
+        .card img {
+           width: 100%;
+           margin-bottom: 10px;
+           display: inline;
+           object-fit: cover;
+        }
+        /* H1 */
+        span {
+            color: midnightblue;
+        }
+        /* Page Footer */
+        #aim {
+            text-align: center;
+            background-color: black;
+        }
+        /* Logo Div */
+        .logo {
+            float: left;
+            width: 60px;
+        }
+        /* Logo P */
+        #paragraph {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <div><img class="logo" src="./TOY-logo.PNG" alt="logo" />
+                <p id="paragraph" style="font-size:large;"> &nbsp;&nbsp;<strong>TOY.COM</strong></p>
+                <p id="paragraph" style="font-size:small;">&nbsp;&nbsp;&nbsp;<i>Code & Click</i>
+                </p>
+            </div>
+            <h1>Learning is Important: Seek <span>knowledge</span> and Never Relent</h1>
+            <div class="left card"><img class="tile-image" src="./Inspirational Image.jpg" alt="code command">
+                <h2 class="card-title">Learner</h1>
+                <p>I am actively engaged in the process of acquiring knowledge, skills, or expertise in programming. So, learning describes how students receive, process, and retain knowledge during learning. However, emotional, environmental and cognitive influences, as well as prior experience, all play a part in how understanding is acquired or changed and knowledge and skills retained.
+                </p>
+            </div>
+            <div class="right card"><img class="tile-image" src="./Angela Yu.PNG" alt="angela image">
+                <h2 class="card-title">Instructor</h1>
+                <p>A tutor is a person who provides guidance, instruction, and support to student(s) in order to help acquire knowledge, develop skills, or improve their understanding of a particular topic. Udemy's Instructor, Dr Angel Yu teaching the course; the complete 2023 web development bootcamp has been taken me through my web developer journey.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <p><strong>...TOY, Code & Click.</strong></p>
+        </footer>
+    </body>
+    <footer>
+        <p id="aim"><small>Copyright © 2023 @ TOY AdventureWorks
+	</br>
+	All right reserved.</small>
+	</p>
+    </footer>
+</html>
